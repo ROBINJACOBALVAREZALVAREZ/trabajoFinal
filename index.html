@@ -1,67 +1,83 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Lista de tareas</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Trabajo final</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="index.html">Home</a>
-                <a class="nav-item nav-link" href="about.html">About</a>
-                <a class="nav-item nav-link" href="contact.html">Contact</a>
-                <a class="nav-item nav-link" href="#">Task</a>
-              </div>
-            </div>
-          </nav>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Calendario</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="index.html"
+              >Lista de tareas</a
+            >
+            <a class="nav-item nav-link" href="about.html">About</a>
+            <a class="nav-item nav-link" href="contact.html">Contact</a>
+            <a class="nav-item nav-link" href="#">Task</a>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
-        <div class="container mt-5">
-            <h1>LISTA DE TAREAS</h1>
-               <div class="main-task">
-                <section class="card col">
-                    <div class="card-header text-center">
-                        Tareas
-                    </div>
-                    <div class="card-body">
-                        <form id="form-tareas" class="text-center">
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                  <span class="input-group-text" id="basic-addon1">Tarea</span>
-                                </div>
-                                <input name="tarea" id="tarea" type="text" class="form-control" placeholder="Ingrese la tarea" aria-label="Username" aria-describedby="basic-addon1">
-                              </div>
-                              <button type="submit" class="btn btn-success">Agregar</button>
-                        </form>
-                    </div>
-                </section>
-                <hr>
-                <h3>Listado de tareas</h3>
-                <br>
-                <ul class="list-group" id="lista-tareas">
-                    
-                </ul>
-               </div>
+      <div class="container mt-5">
+        <h1>LISTA DE TAREAS</h1>
+        <div class="main-task">
+          <section class="card col">
+            <div class="card-header text-center">Tareas</div>
+            <div class="card-body">
+              <form id="form-tareas" class="text-center">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1"
+                      >Tarea</span
+                    >
+                  </div>
+                  <input
+                    name="tarea"
+                    id="tarea"
+                    type="text"
+                    class="form-control"
+                    placeholder="Ingrese la tarea"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
+                <button type="submit" class="btn btn-success">Agregar</button>
+              </form>
+            </div>
+          </section>
+          <hr />
+          <h3>Listado de tareas</h3>
+          <br />
+          <ul class="list-group" id="lista-tareas">
+            
+          </ul>
         </div>
+      </div>
     </main>
-    <footer>
-        <p>Todos los deechos reservados robin</p>
+    <footer class="text-center footer">
+      <p class="m-auto p-2">&copy Robin Alvarez - Andrez Muñoz</p>
     </footer>
-  
-
     <script src="script.js"></script>
-
-    <a href="contact.html" class="btn btn-primary">Contactos</a>
-
-</body>
+  </body>
 </html>

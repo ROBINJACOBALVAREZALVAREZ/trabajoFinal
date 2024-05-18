@@ -1,62 +1,95 @@
 /* styles.css */
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa; /* Color de fondo gris */
-    height: 100vh;
-    width: 100%;
+  font-family: Arial, sans-serif;
+  background-color: gainsboro; /* Color de fondo gris */
+  height: 100vh;
+  width: 100%;
+  background-size:  100%;
+  background-image: url('https://www.shutterstock.com/shutterstock/photos/2115063422/display_1500/stock-photo-modern-black-background-line-light-abstract-2115063422.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-    text-align: center;
+  text-align: center;
 }
 
 .form-group {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 #task-list {
-    list-style-type: none;
-    padding-left: 0;
+  list-style-type: none;
+  padding-left: 0;
 }
 
 .task-item {
-    background-color:#A569BD; /* Color de fondo de cada tarea */
-    margin-bottom: 5px;
-    border-radius: 3px;
+  background-color: #a569bd; /* Color de fondo de cada tarea */
+  margin-bottom: 5px;
+  border-radius: 3px;
 }
 
 .task-item.completed {
-    background-color: #e9ecef; /* Color de fondo para tareas completadas */
+  background-color: #e9ecef; /* Color de fondo para tareas completadas */
 }
 
 .btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
+  background-color: #007bff;
+  border-color: #007bff;
 }
 
 .btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
+  background-color: #0056b3;
+  border-color: #0056b3;
 }
 
 .btn-primary:focus,
 .btn-primary.focus {
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+.main-task {
+  display: block;
+  align-items: center;
+  width: 100%;
+}
+
+.footer {
+  background-color: rebeccapurple;
+  color: white;
+  width: 50%;
+  margin: auto;
+  bottom: 1rem;
+  position: absolute;
+  left: 25%;
+  display: flex;
+  justify-content: center;
+  border: solid 3px green;
+  border-radius: 1rem;
 }
 
 
-.main-task {
-    display: block;
-    align-items: center;
-    width: 100%;
+.footer:hover {
+  background-color: white;
+  color: black;
+  width: 50%;
+  margin: auto;
+  bottom: 1rem;
+  position: absolute;
+  left: 25%;
+  display: flex;
+  justify-content: center;
+  border: solid 3px black;
+  border-radius: 1rem;
 }
