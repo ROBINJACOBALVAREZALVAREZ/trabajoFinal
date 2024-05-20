@@ -101,3 +101,15 @@ h1 {
   margin: auto;
   
 }
+
+body{
+  font-family: Arial, sans-serif;
+  background-color: gainsboro; /* Color de fondo gris */
+  height: 100vh;
+  width: 100%;
+  background-size:  100%;
+  background-image: url('https://static.vecteezy.com/system/resources/previews/018/994/854/non_2x/elegant-black-background-with-golden-line-and-lighting-effect-luxury-template-award-modern-design-vector.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
