@@ -1,3 +1,5 @@
+let arregloConTareas = [];
+
 document
   .getElementById("form-tareas")
   .addEventListener("submit", function (event) {
@@ -17,14 +19,21 @@ document
     }
   });
 
-function agregarTarea(data) {
+function agregarTarea(data) {  
   let inputTarea = document.getElementById("tarea");
   let listaTareas = document.getElementById("lista-tareas");
-  let item = document.createElement("li");
-  item.innerHTML = `
-    <div>
+  let item = document.createElement("li");  
+  let encontrado = arregloConTareas.find((elemento)=>{
+    return elemento == inputTarea.value;
+  });
+  if(!encontrado){
+    arregloConTareas.push(inputTarea.value);    
+    item.innerHTML = `
+    <div class='elemento-tarea'>
+    <div class='elemento-nombre-fecha'>
     <span>Nombre: ${inputTarea.value}</span>
     <span>Fecha: ${new Date().toLocaleDateString()}</span>
+    </div>
     <button type="button" class="btn btn-success" id="${
       inputTarea.value
     }">Completar</button>
@@ -44,5 +53,10 @@ function agregarTarea(data) {
   botonDelete.addEventListener("click", (event) => {
     item.remove();
   });
+  }else {
+    alert("Tarea ya existe")
+  }
+
+  
   inputTarea.value = null;
 }
