@@ -16,3 +16,8 @@ Este proyecto no solo permite la aplicación práctica de conocimientos teórico
 
 - Robin Jacob Alvarez Alvarez
 - Andrez Felipe Muñoz Muñoz
+
+`Depliegue con docker`
+
+- docker build -t trabajo-final .
+- docker run -d -p 80:80 trabajo-final
